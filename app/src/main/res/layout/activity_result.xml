@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     >
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/universitydiary_logo"
+    android:layout_margin="10dp"
+    />
+    <LinearLayout
+        android:id="@+id/title_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/logo"
+        >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대학일기"
+        android:textSize="25sp"
+        android:layout_weight="3"
+        />
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자까"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+        <ImageView
+            android:id="@+id/platform_logo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/naver_logo"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tag_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/logo"
+        android:layout_below="@id/title_space"
+        android:gravity="center_vertical"
+        >
+    <ImageView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/naver_logo"
+        android:layout_margin="2dp"
+        />
+    <ImageView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/naver_logo"
+        android:layout_margin="2dp"
+        />
+    <ImageView
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/naver_logo"
+        android:layout_margin="2dp"
+        />
 
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
